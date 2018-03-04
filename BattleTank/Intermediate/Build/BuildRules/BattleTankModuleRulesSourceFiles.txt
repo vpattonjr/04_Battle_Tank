@@ -1,0 +1,3 @@
+C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Source\BattleTank\BattleTank.Build.cs
+C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Source\BattleTank.Target.cs
+C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Source\BattleTankEditor.Target.cs
