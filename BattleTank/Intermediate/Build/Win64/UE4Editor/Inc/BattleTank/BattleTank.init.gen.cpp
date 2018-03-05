@@ -5,6 +5,7 @@
 ===========================================================================*/
 
 #include "GeneratedCppIncludes.h"
+#include "BattleTank.h"
 PRAGMA_DISABLE_OPTIMIZATION
 #ifdef _MSC_VER
 #pragma warning (push)
@@ -20,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeBattleTank_init() {}
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), nullptr, FName(TEXT("/Script/BattleTank")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0xA87A3D3B;
-			Guid.B = 0x23E50B5D;
+			Guid.A = 0x3903D570;
+			Guid.B = 0x63C8AC5C;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);

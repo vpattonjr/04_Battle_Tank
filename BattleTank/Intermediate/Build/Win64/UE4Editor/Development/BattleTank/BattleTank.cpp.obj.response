@@ -353,11 +353,10 @@
 /I "C:\Program Files\Epic Games\UE_4.17\Engine\Source\Runtime\AudioMixer\Public\DSP"
 /I "C:\Program Files\Epic Games\UE_4.17\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer"
 /I "C:\Program Files\Epic Games\UE_4.17\Engine\Source\Runtime\AudioMixer"
-/FI"C:\Program Files\Epic Games\UE_4.17\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
-/Yu"C:\Program Files\Epic Games\UE_4.17\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Program Files\Epic Games\UE_4.17\Engine\Intermediate\Build\Win64\UE4Editor\Development\Engine\SharedPCH.Engine.h.pch"
+/FI"C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h"
+/Yu"C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h"
+/Fp"C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\PCH.BattleTank.h.pch"
 "C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Source\BattleTank\BattleTank.cpp"
-/FI"C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\Definitions.BattleTank.h"
 /Fo"C:\Users\vanpa\source\04_Battle_Tank\BattleTank\Intermediate\Build\Win64\UE4Editor\Development\BattleTank\BattleTank.cpp.obj"
 /TP
 /GR-
