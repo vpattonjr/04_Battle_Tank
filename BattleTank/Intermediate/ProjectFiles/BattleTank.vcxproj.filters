@@ -52,6 +52,9 @@
     <ClInclude Include="..\..\Source\BattleTank\TankAIController.h">
       <Filter>Source\BattleTank</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\BattleTank\TankAimingComponent.h">
+      <Filter>Source\BattleTank</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\BattleTank\TankPlayerController.cpp">
@@ -61,6 +64,9 @@
       <Filter>Source\BattleTank</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BattleTank\TankAIController.cpp">
+      <Filter>Source\BattleTank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BattleTank\TankAimingComponent.cpp">
       <Filter>Source\BattleTank</Filter>
     </ClCompile>
   </ItemGroup>
