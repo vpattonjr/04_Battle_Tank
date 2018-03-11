@@ -3,12 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "TankBarrel.h"
 #include "Components/ActorComponent.h"
 #include "TankAimingComponent.generated.h"
 
 //Forward declaration
 class UTankBarrel;
+class UTankTurrent;
 
 //Holds barrel's poperties and Elevate method
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
@@ -18,6 +18,7 @@ class BATTLETANK_API UTankAimingComponent : public UActorComponent
 
 private:	
 	UTankBarrel * Barrel = nullptr;
+	UTankTurrent * Turrent = nullptr;
 	void MoveBarrelTowards(FVector AimDirection);
 
 public:	
@@ -28,7 +29,5 @@ public:
 	UTankAimingComponent();
 
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
-
-		
-	
+	void SetTurrentReference(UTankTurrent* TurrentToSet);	
 };

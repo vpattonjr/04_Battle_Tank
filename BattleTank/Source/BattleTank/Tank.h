@@ -7,6 +7,7 @@
 
 //Forward declrations
 class UTankBarrel;
+class UTankTurrent;
 class UTankAimingComponent;
 
 UCLASS()
@@ -19,6 +20,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
+
+	UFUNCTION(BlueprintCallable, Category = Setup)
+	void SetTurrentReference(UTankTurrent* TurrentToSet);
 
 private:
 	// Called when the game starts or when spawned
