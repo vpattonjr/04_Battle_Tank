@@ -409,10 +409,12 @@
     <ClCompile Include="..\..\Source\BattleTank\Tank.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\TankAIController.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\TankAimingComponent.cpp" />
+    <ClCompile Include="..\..\Source\BattleTank\TankBarrel.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\TankPlayerController.cpp" />
     <ClInclude Include="..\..\Source\BattleTank\Tank.h" />
     <ClInclude Include="..\..\Source\BattleTank\TankAIController.h" />
     <ClInclude Include="..\..\Source\BattleTank\TankAimingComponent.h" />
+    <ClInclude Include="..\..\Source\BattleTank\TankBarrel.h" />
     <ClInclude Include="..\..\Source\BattleTank\TankPlayerController.h" />
     <None Include="..\..\BattleTank.uproject" />
     <None Include="..\..\Source\BattleTank.Target.cs" />
