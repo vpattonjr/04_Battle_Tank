@@ -61,9 +61,6 @@
     <ClInclude Include="..\..\Source\BattleTank\TankTurrent.h">
       <Filter>Source\BattleTank</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\BattleTank\Projectile.h">
-      <Filter>Source\BattleTank</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\BattleTank\TankPlayerController.cpp">
@@ -82,9 +79,6 @@
       <Filter>Source\BattleTank</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\BattleTank\TankTurrent.cpp">
-      <Filter>Source\BattleTank</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\BattleTank\Projectile.cpp">
       <Filter>Source\BattleTank</Filter>
     </ClCompile>
   </ItemGroup>
