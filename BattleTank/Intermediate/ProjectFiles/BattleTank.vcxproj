@@ -406,12 +406,14 @@
     <NMakeOutput>..\..\Binaries\HTML5\BattleTank-HTML5-Shipping.exe</NMakeOutput>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\BattleTank\Projectile.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\Tank.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\TankAIController.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\TankAimingComponent.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\TankBarrel.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\TankPlayerController.cpp" />
     <ClCompile Include="..\..\Source\BattleTank\TankTurrent.cpp" />
+    <ClInclude Include="..\..\Source\BattleTank\Projectile.h" />
     <ClInclude Include="..\..\Source\BattleTank\Tank.h" />
     <ClInclude Include="..\..\Source\BattleTank\TankAIController.h" />
     <ClInclude Include="..\..\Source\BattleTank\TankAimingComponent.h" />
