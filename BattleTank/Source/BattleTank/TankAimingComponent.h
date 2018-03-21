@@ -33,14 +33,19 @@ private:
 	// Sets default values for this component's properties
 	UTankAimingComponent();
 
+	UPROPERTY(EditDefaultsOnly, Category = "Firing")
+	float LaunchSpeed = 4000;
+
 protected:
 	UPROPERTY(BluePrintReadOnly, Category = "State")
 	EFiringState FiringState = EFiringState::Reloading;
 
 
 public:	
+	virtual void BeginPlay() override;
+
 	// Called every frame
-	void AimAt(FVector HitLocation, float LaunchSpeed);
+	void AimAt(FVector HitLocation);
 
 	UFUNCTION(BlueprintCallable, Category = "Setup")
 	void Initialize(UTankBarrel* BarrelToSet, UTankTurrent* TurrentToSet);
