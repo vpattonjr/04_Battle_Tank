@@ -23,7 +23,14 @@ public:
 	UPROPERTY(EditDefaultsOnly)
 	float TrackMaxDrivingForce = 400000;//for the tank tonage
 	
-	
-	
-	
+private:
+	virtual void BeginPlay() override;
+
+	void ApplySidewaysForce();
+
+	UTankTracks();
+
+	UFUNCTION()
+	void OnHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, FVector NormalImpulse, const FHitResult& Hit);
+
 };
