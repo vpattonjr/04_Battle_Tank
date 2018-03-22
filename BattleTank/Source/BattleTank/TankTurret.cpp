@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "BattleTank.h"
-#include "TankTurrent.h"
-void UTankTurrent::Rotate(float RelativeSpeed)
+#include "TankTurret.h"
+void UTankTurret::Rotate(float RelativeSpeed)
 {
 	//Move the barrel the right amount this frame
 	//Given a max elevation speed, and frame time
