@@ -27,15 +27,6 @@ void ATankAIController::Tick(float DeltaTime)
 	
 	if (AimingComponent->GetFiringState() == EFiringState::Locked)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("LOCKED"));
 		AimingComponent->Fire(); // TODO limit firing rate
-	}
-	if (AimingComponent->GetFiringState() == EFiringState::Reloading)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("RELOADING"));
-	}
-	if (AimingComponent->GetFiringState() == EFiringState::Aiming)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("AIMING"));
 	}
 }
