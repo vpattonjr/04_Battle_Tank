@@ -30,11 +30,7 @@ void UMortarAimingComponent::Initialise(UMortarBarrel* BarrelToSet, UMortarTurre
 
 void UMortarAimingComponent::TickComponent(float DeltaTime, enum ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction)
 {
-	if (RoundsLeft <= 0)
-	{
-		FiringState = EMortarFiringState::OutOfAmmo;
-	}
-	else if ((FPlatformTime::Seconds() - LastFireTime) < ReloadTimeInSeconds)
+	if ((FPlatformTime::Seconds() - LastFireTime) < ReloadTimeInSeconds)
 	{
 		FiringState = EMortarFiringState::Reloading;
 	}
@@ -53,7 +49,7 @@ EMortarFiringState UMortarAimingComponent::GetFiringState() const
 	return FiringState;
 }
 
-int UMortarAimingComponent::GetRoundsLeft() const
+int32 UMortarAimingComponent::GetRoundsLeft() const
 {
 	return RoundsLeft;
 }

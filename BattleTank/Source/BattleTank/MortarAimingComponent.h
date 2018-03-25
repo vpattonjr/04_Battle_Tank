@@ -40,7 +40,7 @@ public:
 	EMortarFiringState GetFiringState() const;
 
 	UFUNCTION(BlueprintCallable, Category = "Firing")
-	int GetRoundsLeft() const;
+	int32 GetRoundsLeft() const;
 
 protected:
 	UPROPERTY(BlueprintReadOnly, Category = "State")
@@ -64,18 +64,18 @@ private:
 
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-		float LaunchSpeed = 4000;
+	float LaunchSpeed = 4000;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Setup")
-		TSubclassOf<AProjectile> ProjectileBlueprint;
+	TSubclassOf<AProjectile> ProjectileBlueprint;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Firing")
-		float ReloadTimeInSeconds = 3;
+	float ReloadTimeInSeconds = 3;
 
 	double LastFireTime = 0;
 
 	FVector AimDirection;
 
-	int RoundsLeft = 3;
+	int32 RoundsLeft = 3;
 
 };
