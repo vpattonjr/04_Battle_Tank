@@ -4,6 +4,11 @@
 #include "Tank.h"
 
 
+float ATank::GetHealthPercent() const
+{
+	return (float)CurrentHealth / (float)StartingHealth;
+}
+
 // Sets default values
 ATank::ATank()
 {
@@ -11,9 +16,10 @@ ATank::ATank()
 	PrimaryActorTick.bCanEverTick = false;
 }
 
-float ATank::GetHealthPercent() const
+void ATank::BeginPlay()
 {
-	return (float)CurrentHealth / (float)StartingHealth;
+	Super::BeginPlay();
+	CurrentHealth = StartingHealth;
 }
 
 float ATank::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEvent, class AController * EventInstigator, AActor * DamageCauser)
@@ -22,10 +28,9 @@ float ATank::TakeDamage(float DamageAmount, struct FDamageEvent const & DamageEv
 	int32 DamageToApply = FMath::Clamp(DamagePoints, 0, CurrentHealth);
 
 	CurrentHealth -= DamageToApply;
-	if (CurrentHealth <= 0) 
+	if (CurrentHealth <= 0)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("TANK WENT BOOM! U DIEDEDED"))
+		OnDeath.Broadcast();
 	}
-	
 	return DamageToApply;
 }
